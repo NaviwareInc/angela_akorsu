@@ -27,7 +27,7 @@ export default {
 .hero {
   width: 100%;
   height: 100vh;
-  background: url(../../assets/hero-bg.jpg) top center;
+  background: url(../../assets/dr_akorsu.jpg) top center;
   background-size: cover;
   position: relative;
   margin-bottom: -75px;

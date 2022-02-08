@@ -114,7 +114,6 @@ export default {
   color: white;
   transition: 0.3s;
   font-size: 15px;
-  /*font-family: "Open Sans", sans-serif;*/
   font-weight: 600;
   padding: 0 3px;
   text-decoration: none;
@@ -141,73 +140,57 @@ export default {
   color: #fff;
 }
 
-.nav-bar .dropdown ul {
+/*hide the dropdown*/
+.nav-bar .dropdown .dropdown-menu {
   display: block;
   position: absolute;
   left: 12px;
   top: calc(100% + 30px);
-  z-index: 99;
+  z-index: 1050;
   opacity: 0;
   visibility: hidden;
   padding: 10px 0;
   background: #fff;
-  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  box-shadow: 0 0 30px rgba(127, 137, 161, 0.25);
   transition: 0.3s;
 }
 
-.nav-bar .dropdown:hover > ul {
+.nav-bar .dropdown:hover > .dropdown-menu {
   opacity: 1;
   top: 100%;
   visibility: visible;
 }
 
-.nav-bar .dropdown li {
-  min-width: 180px;
-  position: relative;
-}
-
-.nav-bar .dropdown ul a {
-  padding: 10px 20px;
-  font-size: 14px;
+.nav-bar .dropdown .dropdown-menu a {
+  padding: 5px 20px;
+  font-size: 15px;
   font-weight: 500;
   text-transform: none;
-  color: #150517;
+  color: #2c3e50;
 }
 
-.nav-bar .dropdown ul a:hover, .nav-bar .dropdown ul .active > a, .nav-bar .dropdown ul li:hover > a {
+.nav-bar .dropdown-menu a:hover,
+.nav-bar .dropdown-menu .active > a,
+.nav-bar .dropdown-menu li:hover > a {
   color: #ff7f5d;
+  background: inherit;
 }
 
-.nav-bar .dropdown .dropdown ul {
-  top: 0;
-  left: calc(100% - 30px);
-}
-
-.nav-bar .dropdown .dropdown:hover > ul {
-  opacity: 1;
-  top: 0;
-  left: 100%;
-}
-
-.nav-bar .dropdown .dropdown > a {
-  padding-right: 35px;
-}
-
-.nav-bar .dropdown .dropdown > a:after {
-  content: "\eaa0";
-  font-family: IcoFont;
-  position: absolute;
-  right: 15px;
-}
+/*.nav-bar .dropdown-menu > a:after {*/
+/*  content: "\eaa0";*/
+/*  font-family: IcoFont;*/
+/*  position: absolute;*/
+/*  right: 15px;*/
+/*}*/
 
 @media (max-width: 1366px) {
-  .nav-bar .dropdown .dropdown ul {
+  .nav-bar .dropdown .dropdown-menu ul {
     left: -90%;
   }
-  .nav-bar .dropdown .dropdown:hover > ul {
+  .nav-bar .dropdown .dropdown-menu:hover > ul {
     left: -100%;
   }
-  .nav-bar .dropdown .dropdown > a:after {
+  .nav-bar .dropdown .dropdown-menu > a:after {
     content: "\ea9d";
   }
 }

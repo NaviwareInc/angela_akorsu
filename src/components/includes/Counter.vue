@@ -1,14 +1,19 @@
 <template>
   <div class="col-lg-3 col-6 text-center">
-    <span data-toggle="counter-up">{{ figure }}</span>
+    <vue3-autocounter :startAmount="0" :endAmount="figure"/>
     <p>{{ title }}</p>
   </div>
 </template>
 
 <script>
+import Vue3autocounter from 'vue3-autocounter';
+
 export default {
   name: "Counter",
-  props: ['figure', 'title']
+  props: ['figure', 'title'],
+  components: {
+    'vue3-autocounter': Vue3autocounter
+  }
 }
 </script>
 
