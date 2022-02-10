@@ -1,12 +1,16 @@
 <template>
   <header id="header-sticky-wrapper" class=" header sticky-wrapper" style="height: 73.5px;">
         <div class="container-fluid d-flex align-items-center justify-content-between">
-          <h1 class="logo"><a href="index.html">Angel Akorsu</a></h1>
+          <h1 class="logo"><a href="/">Angel Akorsu</a></h1>
 
           <nav class="nav-bar">
             <ul class="">
               <li class="nav-item active">
-                <a class="nav-link" href="index.html">Profile</a>
+                <a class="nav-link" href="/">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/profile">Profile</a>
               </li>
 
               <li class="nav-item dropdown">
@@ -15,17 +19,17 @@
                 </a>
 
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="#">Books</a>
-                  <a class="dropdown-item" href="#">Articles</a>
-                  <a class="dropdown-item" href="#">Papers</a>
-                  <a class="dropdown-item" href="#">Reports</a>
+                  <a class="dropdown-item" href="/books">Books</a>
+                  <a class="dropdown-item" href="/articles">Articles</a>
+                  <a class="dropdown-item" href="/research">Research</a>
+                  <a class="dropdown-item" href="/reports">Reports</a>
                 </div>
               </li>
 
-              <li class="nav-item"><a class="nav-link" href="#">Associations</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Awards & Recognitions</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+              <li class="nav-item"><a class="nav-link" href="/associations">Associations</a></li>
+              <li class="nav-item"><a class="nav-link" href="/recognitions">Awards & Recognitions</a></li>
+              <li class="nav-item"><a class="nav-link" href="/gallery">Gallery</a></li>
+              <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
             </ul>
           </nav>
 

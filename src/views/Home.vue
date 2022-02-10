@@ -4,7 +4,7 @@
 
   <main>
     <section class="welcome">
-      <div class="container p-lg-5 p-md-5">
+      <div class="container py-lg-5 py-md-5">
         <PageHeader :heading="heading"/>
 
         <div class="row text-start">
@@ -21,8 +21,8 @@
       </div>
     </section>
 
-    <section class="counts">
-      <div class="container">
+    <section class="counts light-bg">
+      <div class="container py-lg-5">
         <div class="row counters">
           <Counter title="Publications" figure="21"/>
 
@@ -45,7 +45,7 @@
 import Hero from "@/components/home/Hero";
 import Header from "@/components/includes/Header";
 import PageHeader from "@/components/includes/PageHeader";
-import Counter from "@/components/includes/Counter";
+import Counter from "@/components/home/Counter";
 import Footer from "@/components/includes/Footer";
 import Panel from "@/components/includes/Panel";
 

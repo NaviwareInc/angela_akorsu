@@ -1,5 +1,5 @@
 <template>
-  <section class="panel container py-5">
+  <section class="panel container py-5 text-start">
     <div class="row">
       <div class="col-lg-3">
         <h3 class="mb-3">Dr. Angela Akorsu</h3>
@@ -18,22 +18,22 @@
       <div class="col-6 col-lg-2 offset-lg-1">
         <h5>Links</h5>
         <ul class="list-unstyled">
-          <li class="mb-2"><a href="">Home</a></li>
-          <li class="mb-2"><a href="">Profile</a></li>
-          <li class="mb-2"><a href="">Associations</a></li>
-          <li class="mb-2"><a href="">Awards & Recognitions</a></li>
-          <li class="mb-2"><a href="">Gallery</a></li>
-          <li class="mb-2"><a href="">Contact</a></li>
+          <li class="mb-2"><a href="/" class="gen-link">Home</a></li>
+          <li class="mb-2"><a href="/profile" class="gen-link">Profile</a></li>
+          <li class="mb-2"><a href="/associations" class="gen-link">Associations</a></li>
+          <li class="mb-2"><a href="/recognitions" class="gen-link">Awards & Recognitions</a></li>
+          <li class="mb-2"><a href="/gallery" class="gen-link">Gallery</a></li>
+          <li class="mb-2"><a href="/contact" class="gen-link">Contact</a></li>
         </ul>
       </div>
 
       <div class="col-6 col-lg-2 offset-lg-1">
         <h5>Publications</h5>
         <ul class="list-unstyled">
-          <li class="mb-2"><a href="">Books</a></li>
-          <li class="mb-2"><a href="">Research</a></li>
-          <li class="mb-2"><a href="">Articles</a></li>
-          <li class="mb-2"><a href="">Reports</a></li>
+          <li class="mb-2"><a href="/books" class="gen-link">Books</a></li>
+          <li class="mb-2"><a href="/research" class="gen-link">Research</a></li>
+          <li class="mb-2"><a href="/articles" class="gen-link">Articles</a></li>
+          <li class="mb-2"><a href="/reports" class="gen-link">Reports</a></li>
         </ul>
       </div>
 
@@ -41,25 +41,25 @@
         <h5>Let's Interact</h5>
         <ul class="list-unstyled">
           <li class="mb-2">
-            <a href="">
+            <a href="" class="gen-link">
               <i class="icofont-linkedin"></i>
               @angelaakorsu
             </a>
           </li>
           <li class="mb-2">
-            <a href="">
+            <a href="" class="gen-link">
               <i class="icofont-facebook"></i>
               @angelaakorsu
             </a>
           </li>
           <li class="mb-2">
-            <a href="">
+            <a href="" class="gen-link">
               <i class="icofont-instagram"></i>
               @angelaakorsu
             </a>
           </li>
           <li class="mb-2">
-            <a href="">
+            <a href="" class="gen-link">
               <i class="icofont-twitter"></i>
               @angelaakorsu
             </a>
@@ -77,16 +77,6 @@ export default {
 </script>
 
 <style>
-.panel a {
-  color: #495057;
-  text-decoration: none;
-}
-
-.panel a:hover, .panel a:focus {
-  color: #ff7f5d;
-  text-decoration: underline;
-}
-
 .panel .socials a:hover, .panel .socials a:focus {
   text-decoration: none;
 }
