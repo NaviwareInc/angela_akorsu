@@ -1,45 +1,54 @@
 <template>
   <header id="header-sticky-wrapper" class=" header sticky-wrapper" style="height: 73.5px;">
-        <div class="container-fluid d-flex align-items-center justify-content-between">
-          <h1 class="logo"><a href="/">Angel Akorsu</a></h1>
+    <div class="container-fluid d-flex align-items-center justify-content-between">
+      <h1 class="logo"><a href="/">Angela Akorsu</a></h1>
 
-          <nav class="nav-bar">
-            <ul class="">
-              <li class="nav-item active">
-                <a class="nav-link" href="/">Home</a>
-              </li>
+      <nav class="nav-bar">
+        <ul class="">
+          <li class="nav-item">
+            <router-link class="nav-link" to="/">Home</router-link>
+          </li>
 
-              <li class="nav-item">
-                <a class="nav-link" href="/profile">Profile</a>
-              </li>
+          <li class="nav-item">
+            <router-link to="/profile" class="nav-link">Profile</router-link>
+          </li>
 
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
-                  Publications
-                </a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+               data-toggle="dropdown" aria-expanded="false">
+              Publications
+            </a>
 
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="/books">Books</a>
-                  <a class="dropdown-item" href="/articles">Articles</a>
-                  <a class="dropdown-item" href="/research">Research</a>
-                  <a class="dropdown-item" href="/reports">Reports</a>
-                </div>
-              </li>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <router-link class="dropdown-item" to="/books">Books</router-link>
+              <router-link class="dropdown-item" to="/articles">Articles</router-link>
+              <router-link class="dropdown-item" to="/research">Research</router-link>
+              <router-link class="dropdown-item" to="/reports">Reports</router-link>
+            </div>
+          </li>
 
-              <li class="nav-item"><a class="nav-link" href="/associations">Associations</a></li>
-              <li class="nav-item"><a class="nav-link" href="/recognitions">Awards & Recognitions</a></li>
-              <li class="nav-item"><a class="nav-link" href="/gallery">Gallery</a></li>
-              <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
-            </ul>
-          </nav>
+          <li class="nav-item">
+            <router-link class="nav-link" to="/associations">Associations</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link" to="/recognitions">Awards & Recognitions</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link" to="/gallery">Gallery</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link" to="/contact">Contact</router-link>
+          </li>
+        </ul>
+      </nav>
 
-          <div class="header-social-links">
-            <a href="#" class="linkedin"><i class="icofont-linkedin"></i></a>
-            <a href="#" class="facebook"><i class="icofont-facebook"></i></a>
-            <a href="#" class="instagram"><i class="icofont-instagram"></i></a>
-            <a href="#" class="twitter"><i class="icofont-twitter"></i></a>
-          </div>
-        </div>
+      <div class="header-social-links">
+        <a href="#" class="linkedin"><i class="icofont-linkedin"></i></a>
+        <a href="#" class="facebook"><i class="icofont-facebook"></i></a>
+        <a href="#" class="instagram"><i class="icofont-instagram"></i></a>
+        <a href="#" class="twitter"><i class="icofont-twitter"></i></a>
+      </div>
+    </div>
   </header>
 </template>
 
@@ -75,6 +84,7 @@ export default {
 .header .header-social-links a:hover {
   color: #ff7f5d;
 }
+
 .header .header-social-links a {
   color: #fff;
   padding-left: 6px;
@@ -135,7 +145,8 @@ export default {
   transition: all 0.3s ease-in-out 0s;
 }
 
-.nav-bar a:hover:before, .nav-bar li:hover > a:before, .nav-bar .active > a:before {
+.nav-bar a:hover:before,
+.nav-bar li:hover > a:before {
   visibility: visible;
   width: 100%;
 }
@@ -191,9 +202,11 @@ export default {
   .nav-bar .dropdown .dropdown-menu ul {
     left: -90%;
   }
+
   .nav-bar .dropdown .dropdown-menu:hover > ul {
     left: -100%;
   }
+
   .nav-bar .dropdown .dropdown-menu > a:after {
     content: "\ea9d";
   }

@@ -38,4 +38,14 @@
   color: #ff7f5d;
   text-decoration: underline;
 }
+
+.nav-bar .router-link-exact-active > a:before,
+.nav-bar .router-link-active > a:before {
+  visibility: visible;
+  width: 100%;
+}
+.nav-bar .router-link-exact-active > a,
+.nav-bar .router-link-active > a {
+  color: #fff;
+}
 </style>

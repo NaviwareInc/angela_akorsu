@@ -5,10 +5,11 @@ import Associations from "@/views/Associations";
 import Gallery from "@/views/Gallery";
 import Contact from "@/views/Contact";
 import Recognitions from "@/views/Recognitions";
-import Books from "@/views/Books";
-import Articles from "@/views/Articles";
-import Reports from "@/views/Reports";
-import Research from "@/views/Research";
+import Books from "@/views/publications/Books";
+import Articles from "@/views/publications/Articles";
+import Reports from "@/views/publications/Reports";
+import Research from "@/views/publications/Research";
+import Error404 from "@/views/Error404";
 
 const routes = [
   {
@@ -60,6 +61,12 @@ const routes = [
     path: '/research',
     name: 'Research',
     component: Research,
+  },
+  //catch all 404
+  {
+    path: '/:catchAll(.*)',
+    name: "Error404",
+    component: Error404
   }
 ]
 

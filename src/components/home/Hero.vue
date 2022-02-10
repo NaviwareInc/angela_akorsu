@@ -31,7 +31,6 @@ export default {
   background-size: cover;
   position: relative;
   margin-bottom: -75px;
-  /*background-attachment: fixed;*/
 }
 
 .hero-content {
