@@ -21,9 +21,9 @@
 
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               <router-link class="dropdown-item" to="/books">Books</router-link>
+              <router-link class="dropdown-item" to="/reports">Research & Reports</router-link>
               <router-link class="dropdown-item" to="/articles">Articles</router-link>
-              <router-link class="dropdown-item" to="/research">Research</router-link>
-              <router-link class="dropdown-item" to="/reports">Reports</router-link>
+<!--              <router-link class="dropdown-item" to="/research">Research</router-link>-->
             </div>
           </li>
 
