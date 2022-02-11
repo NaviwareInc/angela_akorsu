@@ -1,15 +1,28 @@
-Associations.vue<template>
+<template>
   <Header/>
 
   <main>
-    <section class="welcome">
+    <section class="books">
       <div class="container py-lg-5 py-md-5">
         <PageHeader :heading="heading"/>
+          <p class="text-center">These are my books</p>
 
-        <div class="row text-start">
-          <p>
-            These are my books
-          </p>
+        <div class="row">
+          <Zoomy
+              pic = "./images/book.jpg"
+              title="In The Chest Of A Woman"
+              date="20/09/2020"
+              publisher="University of Cape Coast Press"
+              desc="This is an age old book"
+          />
+
+          <Zoomy
+              pic = "./images/book.jpg"
+              title="In The Chest Of A Woman"
+              date="20/09/2020"
+              publisher="University of Cape Coast Press"
+              desc="This is an age old book"
+          />
         </div>
       </div>
     </section>
@@ -25,10 +38,11 @@ import Header from "@/components/includes/Header";
 import PageHeader from "@/components/includes/PageHeader";
 import Footer from "@/components/includes/Footer";
 import Panel from "@/components/includes/Panel";
+import Zoomy from "@/components/includes/Zoomy";
 
 export default {
   name: "Books",
-  components: {Panel, Footer, PageHeader, Header},
+  components: {Zoomy, Panel, Footer, PageHeader, Header},
   data() {
     return {
       heading: "Books"
@@ -37,8 +51,8 @@ export default {
 }
 </script>
 
-<style scoped>
-.counts {
-  padding: 0;
+<style>
+.books .zoomy .pic {
+  width: 40%;
 }
 </style>

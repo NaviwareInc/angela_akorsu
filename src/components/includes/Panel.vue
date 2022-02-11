@@ -18,22 +18,22 @@
       <div class="col-6 col-lg-2 offset-lg-1">
         <h5>Links</h5>
         <ul class="list-unstyled">
-          <li class="mb-2"><a href="/" class="gen-link">Home</a></li>
-          <li class="mb-2"><a href="/profile" class="gen-link">Profile</a></li>
-          <li class="mb-2"><a href="/associations" class="gen-link">Associations</a></li>
-          <li class="mb-2"><a href="/recognitions" class="gen-link">Awards & Recognitions</a></li>
-          <li class="mb-2"><a href="/gallery" class="gen-link">Gallery</a></li>
-          <li class="mb-2"><a href="/contact" class="gen-link">Contact</a></li>
+          <li class="mb-2"><router-link to="/" class="gen-link">Home</router-link></li>
+          <li class="mb-2"><router-link to="/profile" class="gen-link">Profile</router-link></li>
+          <li class="mb-2"><router-link to="/associations" class="gen-link">Associations</router-link></li>
+          <li class="mb-2"><router-link to="/recognitions" class="gen-link">Awards & Recognitions</router-link></li>
+          <li class="mb-2"><router-link to="/gallery" class="gen-link">Gallery</router-link></li>
+          <li class="mb-2"><router-link to="/contact" class="gen-link">Contact</router-link></li>
         </ul>
       </div>
 
       <div class="col-6 col-lg-2 offset-lg-1">
         <h5>Publications</h5>
         <ul class="list-unstyled">
-          <li class="mb-2"><a href="/books" class="gen-link">Books</a></li>
-          <li class="mb-2"><a href="/research" class="gen-link">Research</a></li>
-          <li class="mb-2"><a href="/articles" class="gen-link">Articles</a></li>
-          <li class="mb-2"><a href="/reports" class="gen-link">Reports</a></li>
+          <li class="mb-2"><router-link to="/books" class="gen-link">Books</router-link></li>
+          <li class="mb-2"><router-link to="/reports" class="gen-link">Research & Reports</router-link></li>
+          <li class="mb-2"><router-link to="/articles" class="gen-link">Articles</router-link></li>
+<!--          <li class="mb-2"><router-link to="/research" class="gen-link">Research & Reports</router-link></li>-->
         </ul>
       </div>
 
@@ -41,28 +41,28 @@
         <h5>Let's Interact</h5>
         <ul class="list-unstyled">
           <li class="mb-2">
-            <a href="" class="gen-link">
+            <router-link to="" class="gen-link">
               <i class="icofont-linkedin"></i>
               @angelaakorsu
-            </a>
+            </router-link>
           </li>
           <li class="mb-2">
-            <a href="" class="gen-link">
+            <router-link to="" class="gen-link">
               <i class="icofont-facebook"></i>
               @angelaakorsu
-            </a>
+            </router-link>
           </li>
           <li class="mb-2">
-            <a href="" class="gen-link">
+            <router-link to="" class="gen-link">
               <i class="icofont-instagram"></i>
               @angelaakorsu
-            </a>
+            </router-link>
           </li>
           <li class="mb-2">
-            <a href="" class="gen-link">
+            <router-link to="" class="gen-link">
               <i class="icofont-twitter"></i>
               @angelaakorsu
-            </a>
+            </router-link>
           </li>
         </ul>
       </div>

@@ -7,28 +7,31 @@
         <PageHeader :heading="heading"/>
 
         <div class="row">
-          <Award
-              pic='@/assets/logo.png'
-              title="2001 Best HoD Award"
+          <Zoomy
+              pic="./images/f17.jpg"
+              title="Fellow of the Institute of Chartered Mediators & Conciliators (ICMC)"
               date="02/02/2001"
-              desc="This is a good award"
+              desc="This is a good award from the Institute of Chartered Mediators & Conciliators (ICMC)"
           />
-          <Award
-              title="2002 Best HoD Award"
-              date="02/02/2002"
-              desc="This is a another good award"
+          <Zoomy
+              pic="./images/f17.jpg"
+              title="Fellow of the Institute of Chartered Mediators & Conciliators (ICMC)"
+              date="02/02/2001"
+              desc="This is a good award from the Institute of Chartered Mediators & Conciliators (ICMC)"
           />
-          <Award
-              title="2002 Best HoD Award"
-              date="02/02/2002"
-              desc="This is a another good award"
-              shift="mt-4"
+          <Zoomy
+              pic="./images/f17.jpg"
+              title="Kofi Annan International Peacekeeping Training Centre"
+              date="02/02/2009"
+              desc="This is another good award from the Kofi Annan International Peacekeeping Training Centre"
+              shift="mt-lg-5"
           />
-          <Award
-              title="2002 Best HoD Award"
-              date="02/02/2002"
-              desc="This is a another good award"
-              shift="mt-4"
+          <Zoomy
+              pic="./images/f17.jpg"
+              title="Kofi Annan International Peacekeeping Training Centre"
+              date="02/02/2009"
+              desc="This is another good award from the Kofi Annan International Peacekeeping Training Centre"
+              shift="mt-lg-5"
           />
         </div>
       </div>
@@ -45,11 +48,11 @@ import Header from "@/components/includes/Header";
 import PageHeader from "@/components/includes/PageHeader";
 import Footer from "@/components/includes/Footer";
 import Panel from "@/components/includes/Panel";
-import Award from "@/components/awards/Award";
+import Zoomy from "@/components/includes/Zoomy";
 
 export default {
-  name: "Profile",
-  components: {Panel, Footer, PageHeader, Header, Award},
+  name: "Recognitions",
+  components: {Panel, Footer, PageHeader, Header, Zoomy},
   data() {
     return {
       heading: "Awards & Recognition"
@@ -58,5 +61,8 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
+.recognitions .zoomy .pic {
+  width: 50%;
+}
 </style>

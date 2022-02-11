@@ -1,7 +1,7 @@
 <template>
   <footer id="footer">
     <!--Copyright -->
-    <div class="copyright container d-md-flex py-3">
+    <div class="copyright container d-md-flex py-4">
       <div class="me-auto text-center text-md-start text-lg-start text-xl-start">
         <div class="copyright">
           &copy; 2022 Dr. Angel Akorsu
