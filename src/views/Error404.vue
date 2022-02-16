@@ -4,7 +4,7 @@
   <main>
     <section class="container text-center justify-content-center pe-auto m-5">
       <h1 class="fw-bolder">404</h1>
-      <h3>This page does not exist</h3>
+      <h3>Looks like you've followed a broken link or entered a URL that doesn't exist on this site.</h3>
 
       <button @click="goBack">Go Back</button>
       <button @click="goHome">Home</button>

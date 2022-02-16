@@ -13,7 +13,9 @@
               title="In The Chest Of A Woman"
               date="20/09/2020"
               publisher="University of Cape Coast Press"
-              desc="This is an age old book"
+              desc="A play set in the Asante Empire, In the Chest of a Woman is about a woman
+              who disguised her daughter as a boy so that she became the empire's king. The play revolves around the girl's
+              difficulty in life after she grows."
           />
 
           <Zoomy
@@ -21,7 +23,9 @@
               title="In The Chest Of A Woman"
               date="20/09/2020"
               publisher="University of Cape Coast Press"
-              desc="This is an age old book"
+              desc="A play set in the Asante Empire, In the Chest of a Woman is about a woman
+              who disguised her daughter as a boy so that she became the empire's king. The play revolves around the girl's
+              difficulty in life after she grows."
           />
         </div>
       </div>
@@ -53,6 +57,6 @@ export default {
 
 <style>
 .books .zoomy .pic {
-  width: 40%;
+  width: 65%;
 }
 </style>

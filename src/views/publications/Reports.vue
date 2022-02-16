@@ -2,7 +2,7 @@
   <Header/>
 
   <main>
-    <section class="welcome">
+    <section class="reports">
       <div class="container py-lg-5 py-md-5">
         <PageHeader :heading="heading"/>
         <p class="text-center">These are my research reports</p>
@@ -13,7 +13,8 @@
               title="In The Chest Of A Woman"
               date="20/09/2020"
               publisher="University of Cape Coast Press"
-              desc="This is an age old book"
+              desc="Sexual violence is a widespread human rights violation that affects women and girls throughout the
+              world, with particularly high rates among college-age youth."
           />
 
           <Zoomy
@@ -21,7 +22,28 @@
               title="In The Chest Of A Woman"
               date="20/09/2020"
               publisher="University of Cape Coast Press"
-              desc="This is an age old book"
+              desc="Sexual violence is a widespread human rights violation that affects women and girls throughout the
+              world, with particularly high rates among college-age youth."
+          />
+
+          <Zoomy
+              pic="./images/report.png"
+              title="In The Chest Of A Woman"
+              date="20/09/2020"
+              publisher="University of Cape Coast Press"
+              shift="mt-lg-5"
+              desc="Sexual violence is a widespread human rights violation that affects women and girls throughout the
+              world, with particularly high rates among college-age youth."
+          />
+
+          <Zoomy
+              pic="./images/report.png"
+              title="In The Chest Of A Woman"
+              date="20/09/2020"
+              publisher="University of Cape Coast Press"
+              shift="mt-lg-5"
+              desc="Sexual violence is a widespread human rights violation that affects women and girls throughout the
+              world, with particularly high rates among college-age youth."
           />
         </div>
       </div>
@@ -52,7 +74,7 @@ export default {
 </script>
 
 <style scoped>
-.counts {
-  padding: 0;
+.reports .zoomy .pic {
+  width: 65%;
 }
 </style>

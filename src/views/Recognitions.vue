@@ -63,6 +63,6 @@ export default {
 
 <style>
 .recognitions .zoomy .pic {
-  width: 50%;
+  width: 35%;
 }
 </style>
