@@ -36,10 +36,10 @@ import PageHeader from "@/components/includes/PageHeader";
 import Footer from "@/components/includes/Footer";
 import Panel from "@/components/includes/Panel";
 import Lightgallery from 'lightgallery/vue';
-import lgThumbnail from 'lightgallery/plugins/thumbnail';
 import lgZoom from 'lightgallery/plugins/zoom';
 import lgAutoplay from 'lightgallery/plugins/autoplay';
 import lgFullscreen from 'lightgallery/plugins/fullscreen';
+import lgThumbnail from 'lightgallery/plugins/thumbnail';
 
 //aos animation
 import AOS from 'aos'
@@ -51,56 +51,56 @@ export default {
   data() {
     return {
       heading: "Gallery",
-      plugins: [lgZoom, lgThumbnail, lgAutoplay, lgFullscreen],
+      plugins: [lgZoom, lgAutoplay, lgFullscreen, lgThumbnail],
       gallery: [
         {
           src: 'dr_akorsu.jpg',
-          description: 'This is a pic from Ghana - 1',
+          description: '<h4 class="mb-5">This is a pic from Ghana - 1</h4>',
           alt: 'Pic 1'
         },
         {
           src: 'dr_akorsu.jpg',
-          description: 'This is a pic from Ghana - 2',
+          description: '<h4 class="mb-5">This is a pic from Ghana - 2</h4>',
           alt: 'Pic 2'
         },
         {
           src: 'dr_akorsu.jpg',
-          description: 'This is a pic from Ghana - 3',
+          description: '<h4 class="mb-5">This is a pic from Ghana - 3</h4>',
           alt: 'Pic 3'
         },
         {
           src: 'dr_akorsu.jpg',
-          description: 'This is a pic from Ghana - 4',
+          description: '<h4 class="mb-5">This is a pic from Ghana - 4</h4>',
           alt: 'Pic 4'
         },
         {
           src: 'dr_akorsu.jpg',
-          description: 'This is a pic from Ghana - 5',
+          description: '<h4 class="mb-5">This is a pic from Ghana - 5</h4>',
           alt: 'Pic 5'
         },
         {
           src: 'dr_akorsu.jpg',
-          description: 'This is a pic from Ghana - 6',
+          description: '<h4 class="mb-5">This is a pic from Ghana - 6</h4>',
           alt: 'Pic 6'
         },
         {
           src: 'dr_akorsu.jpg',
-          description: 'This is a pic from Ghana - 7',
+          description: '<h4 class="mb-5">This is a pic from Ghana - 7</h4>',
           alt: 'Pic 7'
         },
         {
           src: 'dr_akorsu.jpg',
-          description: 'This is a pic from Ghana - 8',
+          description: '<h4 class="mb-5">This is a pic from Ghana - 8</h4>',
           alt: 'Pic 8'
         },
         {
           src: 'dr_akorsu.jpg',
-          description: 'This is a pic from Ghana - 9',
+          description: '<h4 class="mb-5">This is a pic from Ghana - 9</h4>',
           alt: 'Pic 9'
         },
         {
           src: 'dr_akorsu.jpg',
-          description: 'This is a pic from Ghana - 10',
+          description: '<h4 class="mb-5">This is a pic from Ghana - 10</h4>',
           alt: 'Pic 10'
         }
       ]
@@ -113,11 +113,22 @@ export default {
 </script>
 
 <style>
-@import url('https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.4/css/lightgallery.css');
-@import url('https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.4/css/lg-zoom.css');
-@import url('https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.4/css/lg-video.css');
+@import url('https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.4/css/lightgallery-bundle.css');
 
-.gallery {
+.gallery-item img {
+  transform-origin: center center;
+  transition: transform 0.15s, filter 0.15s ease;
+  width: 100%;
+}
 
+.gallery-item img:hover {
+  cursor: pointer;
+  /*transform-origin: center center;*/
+  transition: transform 0.15s, filter 0.15s ease;
+  filter: brightness(80%);
+}
+
+.lg-outer .lg-thumb-item.active, .lg-outer .lg-thumb-item:hover {
+  border-color: #ff7f5d;
 }
 </style>
