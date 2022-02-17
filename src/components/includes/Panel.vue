@@ -6,7 +6,7 @@
         <ul class="list-unstyled">
           <li class="mb-2">
             Dr. Angela Dziedzom Akorsu is a Senior Research Fellow and the Head of Department at the
-            <a class="gen-link" target="_blank" href="https://directory.ucc.edu.gh/d/department-of-labour-and-human-resource-studies">
+            <a class="intext-link" target="_blank" href="https://directory.ucc.edu.gh/d/department-of-labour-and-human-resource-studies">
               Department of Labour and Human Resource Studies
             </a>,
             School for Development Studies at the University of Cape Coast.

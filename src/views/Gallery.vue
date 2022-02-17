@@ -1,5 +1,5 @@
 <template>
-  <Header/>
+  <Header loc="away"/>
 
   <main>
     <section class="gallery">
@@ -8,9 +8,7 @@
         <p class="text-center">This is my gallery</p>
 
         <div class="">
-          <lightgallery
-              :settings="{ speed: 500, plugins: plugins }" class="row"
-          >
+          <lightgallery :settings="{ speed: 500, plugins: plugins }" class="row">
             <a :key="image"
                v-for="image in gallery"
                class="gallery-item col-lg-4 col-md-12 mb-4"

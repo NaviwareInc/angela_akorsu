@@ -1,5 +1,5 @@
 <template>
-  <header id="header-sticky-wrapper" class=" header sticky-wrapper" style="height: 73.5px;">
+  <header ref="header" class="header" :class="{'header-scrolled': scrolled}" style="height: 73.5px;">
     <div class="container-fluid d-flex align-items-center justify-content-between">
       <h1 class="logo"><a href="/">Angela Akorsu</a></h1>
 
@@ -23,7 +23,7 @@
               <router-link class="dropdown-item" to="/books">Books</router-link>
               <router-link class="dropdown-item" to="/reports">Research & Reports</router-link>
               <router-link class="dropdown-item" to="/articles">Articles</router-link>
-<!--              <router-link class="dropdown-item" to="/research">Research</router-link>-->
+              <!--              <router-link class="dropdown-item" to="/research">Research</router-link>-->
             </div>
           </li>
 
@@ -54,11 +54,39 @@
 
 <script>
 export default {
-  name: "Header"
+  name: "Header",
+  props: ['loc'],
+  data() {
+    return {
+      scrolled: false
+    }
+  },
+  created() {
+    window.addEventListener('scroll', this.handleScroll)
+  },
+  unmounted() {
+    window.removeEventListener('scroll', this.handleScroll)
+  },
+  methods: {
+    handleScroll() {
+      let header_offset = this.$refs.header.offsetTop - window.scrollY;
+
+      console.log(header_offset)
+
+      // Toggle .header-scrolled class to #header when page is scrolled
+      if (header_offset < 1) {
+        this.scrolled = true
+      }
+
+      if(header_offset >= 0) {
+        this.scrolled = false
+      }
+    }
+  }
 }
 </script>
 
-<style scoped>
+<style>
 .header {
   background: rgba(21, 5, 23, 0.25);
   transition: all 0.5s;
@@ -98,8 +126,14 @@ export default {
   text-decoration: none;
 }
 
-.header .header-scrolled, .header .header-inner-pages {
-  background: rgba(21, 5, 23, 0.85);
+.header-scrolled {
+  background: rgba(21, 5, 23, 0.85) !important;
+  width: 1423px !important;
+  position: fixed !important;
+  top: 0 !important;
+  right: 0 !important;
+  left: 0 !important;
+  z-index: auto !important;
 }
 
 /*--------------------------------------------------------------
