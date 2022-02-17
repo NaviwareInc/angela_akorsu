@@ -1,5 +1,5 @@
 <template>
-  <section class="panel container py-5 text-start">
+  <section class="panel container py-5 text-start" data-aos="fade-up" data-aos-duration="1500">
     <div class="row">
       <div class="col-lg-3">
         <h3 class="mb-3">Dr. Angela Akorsu</h3>
@@ -14,19 +14,19 @@
         </ul>
       </div>
 
-      <div class="col-6 col-lg-2 offset-lg-1">
+      <div class="col-6 col-lg-2 offset-lg-1" data-aos="fade-up" data-aos-duration="1500">
         <h5>Links</h5>
         <ul class="list-unstyled">
           <li class="mb-2"><router-link to="/" class="gen-link">Home</router-link></li>
           <li class="mb-2"><router-link to="/profile" class="gen-link">Profile</router-link></li>
           <li class="mb-2"><router-link to="/associations" class="gen-link">Associations</router-link></li>
           <li class="mb-2"><router-link to="/recognitions" class="gen-link">Awards & Recognitions</router-link></li>
-          <li class="mb-2"><router-link to="/gallery" class="gen-link">Gallery</router-link></li>
+          <li class="mb-2"><a class="gen-link" href="/gallery">Gallery</a></li>
           <li class="mb-2"><router-link to="/contact" class="gen-link">Contact</router-link></li>
         </ul>
       </div>
 
-      <div class="col-6 col-lg-2 offset-lg-1">
+      <div class="col-6 col-lg-2 offset-lg-1" data-aos="fade-up" data-aos-duration="1500">
         <h5>Publications</h5>
         <ul class="list-unstyled">
           <li class="mb-2"><router-link to="/books" class="gen-link">Books</router-link></li>
@@ -36,7 +36,7 @@
         </ul>
       </div>
 
-      <div class="col-6 col-lg-2 offset-lg-1 socials">
+      <div class="col-6 col-lg-2 offset-lg-1 socials" data-aos="fade-up" data-aos-duration="1500">
         <h5>Let's Interact</h5>
         <ul class="list-unstyled">
           <li class="mb-2">

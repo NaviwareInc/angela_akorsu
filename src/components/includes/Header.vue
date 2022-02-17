@@ -34,7 +34,7 @@
             <router-link class="nav-link" to="/recognitions">Awards & Recognitions</router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" to="/gallery">Gallery</router-link>
+            <a class="nav-link" href="/gallery">Gallery</a>
           </li>
           <li class="nav-item">
             <router-link class="nav-link" to="/contact">Contact</router-link>
@@ -127,13 +127,13 @@ export default {
 }
 
 .header-scrolled {
-  background: rgba(21, 5, 23, 0.85) !important;
+  background: #280a2c !important;
   width: 1423px !important;
   position: fixed !important;
   top: 0 !important;
   right: 0 !important;
   left: 0 !important;
-  z-index: auto !important;
+  z-index: 1000 !important;
 }
 
 /*--------------------------------------------------------------

@@ -7,13 +7,16 @@
         <PageHeader :heading="heading"/>
         <p class="text-center">This is my gallery</p>
 
-        <div class="">
+        <div>
           <lightgallery :settings="{ speed: 500, plugins: plugins }" class="row">
             <a :key="image"
                v-for="image in gallery"
                class="gallery-item col-lg-4 col-md-12 mb-4"
                :data-src="image.src"
-               :data-sub-html="image.description">
+               :data-sub-html="image.description"
+               data-aos="fade-up"
+               data-aos-duration="1500"
+               data-aos-delay="200">
               <img :alt="image.alt" :src="image.src" class="img-fluid rounded"/>
             </a>
           </lightgallery>
@@ -37,6 +40,10 @@ import lgThumbnail from 'lightgallery/plugins/thumbnail';
 import lgZoom from 'lightgallery/plugins/zoom';
 import lgAutoplay from 'lightgallery/plugins/autoplay';
 import lgFullscreen from 'lightgallery/plugins/fullscreen';
+
+//aos animation
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 export default {
   name: "Gallery",
@@ -98,6 +105,9 @@ export default {
         }
       ]
     }
+  },
+  mounted() {
+    AOS.init({ once: true })
   }
 }
 </script>

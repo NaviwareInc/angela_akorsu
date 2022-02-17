@@ -26,6 +26,10 @@ import PageHeader from "@/components/includes/PageHeader";
 import Footer from "@/components/includes/Footer";
 import Panel from "@/components/includes/Panel";
 
+//aos animation
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
 export default {
   name: "Research",
   components: {Panel, Footer, PageHeader, Header},
@@ -33,6 +37,9 @@ export default {
     return {
       heading: "Research"
     }
+  },
+  mounted() {
+    AOS.init({ once: true })
   }
 }
 </script>

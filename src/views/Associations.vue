@@ -6,7 +6,7 @@
       <div class="container py-lg-5 py-md-5">
         <PageHeader :heading="heading"/>
 
-        <div class="row text-start">
+        <div class="row text-start" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
           <p>
             He founded and was the Pioneer Director of the Centre for Peace and Strategic Studies, University of Ilorin
             in 2008. He was also the UNDP (Accra, Ghana) Consultant for the establishment of the MA Peace and
@@ -39,19 +39,19 @@
       <div class="container py-lg-5">
         <SubTitle title="Current Positions"/>
 
-        <p>
+        <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
           Regional Board Chair,<br>
           West Africa Network for Peacebuilding (WANEP), Accra, Ghana<br>
           <a href="http://www.wanep.org" class="intext-link">www.wanep.org</a>
         </p>
 
-        <p>
+        <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
           Head of Department,<br>
           Department of Labour & Human Resource Skills, UCC, Ghana<br>
           <a href="http://dolahrs.ucc.edu.gh" class="intext-link">dolahrs.ucc.edu.gh</a>
         </p>
 
-        <p>
+        <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
           Regional Board Chair,<br>
           West Africa Network for Peacebuilding (WANEP), Accra, Ghana<br>
           <a href="http://www.wanep.org" class="intext-link">www.wanep.org</a>
@@ -72,6 +72,10 @@ import Footer from "@/components/includes/Footer";
 import Panel from "@/components/includes/Panel";
 import SubTitle from "@/components/includes/SubTitle";
 
+//aos animation
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
 export default {
   name: "Associations",
   components: {Panel, Footer, PageHeader, Header, SubTitle},
@@ -79,6 +83,9 @@ export default {
     return {
       heading: "Associations & Memberships"
     }
+  },
+  mounted() {
+    AOS.init({ once: true })
   }
 }
 </script>

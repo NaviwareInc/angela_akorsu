@@ -44,6 +44,10 @@ import Footer from "@/components/includes/Footer";
 import Panel from "@/components/includes/Panel";
 import Zoomy from "@/components/includes/Zoomy";
 
+//aos animation
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
 export default {
   name: "Books",
   components: {Zoomy, Panel, Footer, PageHeader, Header},
@@ -51,6 +55,9 @@ export default {
     return {
       heading: "Books"
     }
+  },
+  mounted() {
+    AOS.init({ once: true })
   }
 }
 </script>

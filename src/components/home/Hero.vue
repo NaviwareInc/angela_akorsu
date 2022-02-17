@@ -1,8 +1,8 @@
 <template>
   <section class="hero">
     <div class="hero-content">
-      <h1>Dr. Angela Dziedzom Akorsu</h1>
-      <h2>Head of Department, Department of Labour and Human Resource Studies, UCC</h2>
+      <h1 data-aos="fade-down" data-aos-duration="1550">Dr. Angela Dziedzom Akorsu</h1>
+      <h2 data-aos="fade-up" data-aos-duration="1550">Head of Department, Department of Labour and Human Resource Studies, UCC</h2>
     </div>
   </section>
 </template>

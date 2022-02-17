@@ -7,7 +7,7 @@
       <div class="container py-lg-5 py-md-5">
         <PageHeader :heading="heading"/>
 
-        <div class="row text-start">
+        <div class="row text-start" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
           <p>
             For a continent like Africa whose modernisation has been such a painful process for the majority of the populace, the continuous re-examination of each and every proposition is at the heart of Afrocentric consciousness.
           </p>
@@ -21,7 +21,7 @@
       </div>
     </section>
 
-    <section class="counts light-bg">
+    <section class="counts light-bg" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
       <div class="container py-lg-5">
         <div class="row counters">
           <Counter title="Publications" figure="21"/>
@@ -49,6 +49,10 @@ import Counter from "@/components/home/Counter";
 import Footer from "@/components/includes/Footer";
 import Panel from "@/components/includes/Panel";
 
+//aos animation
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
 export default {
   name: "Home",
   components: {Panel, Footer, Counter, PageHeader, Header, Hero},
@@ -56,6 +60,9 @@ export default {
     return {
       heading: "Welcome To Dr. Angela Akorsu's Website"
     }
+  },
+  mounted() {
+    AOS.init({ once: true })
   }
 }
 </script>

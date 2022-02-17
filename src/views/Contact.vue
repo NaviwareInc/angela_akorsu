@@ -8,14 +8,14 @@
         <p class="text-center">Get in touch with me through any means that's comfortable for you</p>
 
         <div class="row">
-          <div class="map">
+          <div class="map" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
             <iframe width="100%" height="350px" style="border:0" loading="lazy" allowfullscreen=""
                     src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJOXmY3uv53Q8R1mewYzqkgLQ&amp;key=AIzaSyD26Nns-xNji5W54RFF-AxMx1xtDWx_ccs">
             </iframe>
           </div>
 
           <div class="container">
-            <div class="row mt-5 justify-content-center">
+            <div class="row mt-5 justify-content-center" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
               <div class="col-lg-12">
                 <div class="info-wrap">
                   <div class="row">
@@ -58,7 +58,7 @@
               </div>
             </div>
 
-            <div class="row mt-5 justify-content-center">
+            <div class="row mt-5 justify-content-center" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
               <div class="col-lg-12">
                 <form action="#" method="POST" role="form" class="contact-form">
                   <input type="hidden" name="_token" value="QxySDOGYLqtBDPKi5HHAwKJM43DQ9xSAP6rjCziI">
@@ -106,6 +106,10 @@ import PageHeader from "@/components/includes/PageHeader";
 import Footer from "@/components/includes/Footer";
 import Panel from "@/components/includes/Panel";
 
+//aos animation
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
 export default {
   name: "Contact",
   components: {Panel, Footer, PageHeader, Header},
@@ -113,6 +117,9 @@ export default {
     return {
       heading: "Let's Get In Touch"
     }
+  },
+  mounted() {
+    AOS.init({ once: true })
   }
 }
 </script>

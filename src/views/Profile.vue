@@ -2,11 +2,11 @@
   <Header/>
 
   <main>
-    <section class="welcome">
+    <section class="profile">
       <div class="container py-lg-5 py-md-5">
         <PageHeader :heading="heading"/>
 
-        <div class="row text-start">
+        <div class="row text-start" data-aos="fade-up" data-aos-duration="1500">
 <!--          <div class="col-lg-6">-->
 <!--            <img src="../assets/dr_akorsu.jpg">-->
 <!--          </div>-->
@@ -74,6 +74,10 @@ import PageHeader from "@/components/includes/PageHeader";
 import Footer from "@/components/includes/Footer";
 import Panel from "@/components/includes/Panel";
 
+//aos animation
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
 export default {
   name: "Profile",
   components: {Panel, Footer, PageHeader, Header},
@@ -81,9 +85,12 @@ export default {
     return {
       heading: "Profile"
     }
+  },
+  mounted() {
+    AOS.init({ once: true })
   }
 }
 </script>
 
-<style scoped>
+<style>
 </style>

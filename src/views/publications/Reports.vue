@@ -62,6 +62,10 @@ import Footer from "@/components/includes/Footer";
 import Panel from "@/components/includes/Panel";
 import Zoomy from "@/components/includes/Zoomy";
 
+//aos animation
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
 export default {
   name: "Reports",
   components: {Panel, Footer, PageHeader, Header, Zoomy},
@@ -69,6 +73,9 @@ export default {
     return {
       heading: "Research & Reports"
     }
+  },
+  mounted() {
+    AOS.init({ once: true })
   }
 }
 </script>

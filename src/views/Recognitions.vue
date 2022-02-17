@@ -50,6 +50,10 @@ import Footer from "@/components/includes/Footer";
 import Panel from "@/components/includes/Panel";
 import Zoomy from "@/components/includes/Zoomy";
 
+//aos animation
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
 export default {
   name: "Recognitions",
   components: {Panel, Footer, PageHeader, Header, Zoomy},
@@ -57,6 +61,9 @@ export default {
     return {
       heading: "Awards & Recognition"
     }
+  },
+  mounted() {
+    AOS.init({ once: true })
   }
 }
 </script>

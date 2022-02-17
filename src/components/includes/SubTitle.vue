@@ -1,5 +1,5 @@
 <template>
-  <div class="subtitle text-center">
+  <div class="subtitle text-center" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
     <h2>{{ title }}</h2>
   </div>
 </template>

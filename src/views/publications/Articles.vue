@@ -58,6 +58,10 @@ import Footer from "@/components/includes/Footer";
 import Panel from "@/components/includes/Panel";
 import Articlely from "@/components/includes/Articlely";
 
+//aos animation
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
 export default {
   name: "Articles",
   components: {Panel, Footer, PageHeader, Header, Articlely},
@@ -65,6 +69,9 @@ export default {
     return {
       heading: "Articles"
     }
+  },
+  mounted() {
+    AOS.init({ once: true })
   }
 }
 </script>

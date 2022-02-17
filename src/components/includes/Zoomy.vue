@@ -1,5 +1,5 @@
 <template>
-  <div class="col-lg-6" :class="shift">
+  <div class="col-lg-6" :class="shift" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
     <div class="zoomy align-items-start d-flex member">
       <div class="pic">
         <img :src="pic" class="img-fluid" :alt="title"/>
